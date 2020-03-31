@@ -1,3 +1,7 @@
-# python_project
+# Python_project
 
-This is some python project for practice.
+This is some _python_ **project** for practice.
+
+```python
+print("Hello, World!")
+```
