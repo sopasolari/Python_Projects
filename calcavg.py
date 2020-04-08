@@ -1,9 +1,5 @@
-x=10
-y="10"
-z=10.1
+stdgrades = {'Marios': 15.3 , 'Peter': 9.9 , 'George': 19.9 ,'john': 3}
 
-sum1=x+x
-sum2=y+y
-sum3=x+z
-
-print(sum1,sum2,sum3)
+print("The average grades of yours student is:",sum(stdgrades.values()) / len(stdgrades.values()))
+print("The max it is:",max(stdgrades.values()))
+print(stdgrades)
