@@ -1,4 +1,8 @@
-stdgrades = {'Marios': 15.3 , 'Peter': 9.9 , 'George': 19.9 ,'john': 3}
-
-print("The average grades of yours student is:",sum(stdgrades.values()) / len(stdgrades.values()))
-print("The max it is:",max(stdgrades.values()))
+averg = []
+averg.append(float(input("Enter the 1 value for avarage:")))
+averg.append(float(input("Enter the 2 value for avarage:")))
+averg.append(float(input("Enter the 3 value for avarage:")))
+averg.append(float(input("Enter the 4 value for avarage:")))
+print (averg)
+print("The average grades of yours student is:", sum(averg) / len(averg))
+print("The max it is:",max(averg))
