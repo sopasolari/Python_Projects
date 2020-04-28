@@ -1,2 +1,2 @@
-file = open("original.txt")
-print(file.read())
+def search_key(inkey):
+    
