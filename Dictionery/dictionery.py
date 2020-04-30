@@ -6,4 +6,4 @@ with open("data.json") as reader:
 def  Word_Meaning(user_input):
     return data[user_input]
 
-print(Word_Meaning("rain"))
+print(Word_Meaning(input("Enter a word: ")))
