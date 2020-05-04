@@ -11,11 +11,12 @@ def  Word_Meaning(user_input):
     if user_input in data :
         return data[user_input]
     else:
-        possibility = get_close_matches(user_input,data.keys())
+        possibility = get_close_matches(user_input,data.keys(),cutoff=0.8)
         if not possibility:
             return "The word not found. Please try another word!"
         else :
             possibility = possibility[0]
+            print(SequenceMatcher(None,user_input,possibility).ratio())
             user_ans = input("Did you mean " + possibility + "? pres y for yes or n for no:")
             user_ans = user_ans.lower()
             if user_ans == "y":
