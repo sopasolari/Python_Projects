@@ -11,6 +11,8 @@ def  Word_Meaning(user_input): #Function to return the meaning of the word
         return data[user_input] #return the meaning of the word
     elif user_input.capitalize() in data :#Check for the capitals for example Paris
         return data[user_input.capitalize()]
+    elif user_input.upper() in data: #Another condition to search word like USA,NATO
+        return data[user_input.upper()]
     else:
         possibility = get_close_matches(user_input,data.keys(),cutoff=0.8) #Assign in variable the possibility word
         if not possibility: #Check if the dict is empty!
