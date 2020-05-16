@@ -23,7 +23,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_c99a4093e1ce47cf94dff31135a23245 {
+                #map_d81e459bc64845418746d2b65f543cbb {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -35,13 +35,13 @@
 </head>
 <body>    
     
-            <div class="folium-map" id="map_c99a4093e1ce47cf94dff31135a23245" ></div>
+            <div class="folium-map" id="map_d81e459bc64845418746d2b65f543cbb" ></div>
         
 </body>
 <script>    
     
-            var map_c99a4093e1ce47cf94dff31135a23245 = L.map(
-                "map_c99a4093e1ce47cf94dff31135a23245",
+            var map_d81e459bc64845418746d2b65f543cbb = L.map(
+                "map_d81e459bc64845418746d2b65f543cbb",
                 {
                     center: [37.976445, 23.725094],
                     crs: L.CRS.EPSG3857,
@@ -55,32 +55,37 @@
 
         
     
-            var tile_layer_24ecddf342634c81aa07de21d67ca49f = L.tileLayer(
+            var tile_layer_a2aa415e065e49719e3a75a31c9d94b8 = L.tileLayer(
                 "https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}.jpg",
                 {"attribution": "Map tiles by \u003ca href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e. Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by-sa/3.0\"\u003eCC BY SA\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
-            ).addTo(map_c99a4093e1ce47cf94dff31135a23245);
+            ).addTo(map_d81e459bc64845418746d2b65f543cbb);
         
     
-            var marker_f9e018562f5946d795023cab62af226b = L.marker(
-                [37.9, 23.7],
+            var feature_group_d03792eb3408499c88db2eb3158b665d = L.featureGroup(
                 {}
-            ).addTo(map_c99a4093e1ce47cf94dff31135a23245);
+            ).addTo(map_d81e459bc64845418746d2b65f543cbb);
         
     
-            var icon_ebf902088e9a4f0fb3bdcd5d0cc8e96e = L.AwesomeMarkers.icon(
+            var marker_9b46eb6a370940e584b076a85e71c116 = L.marker(
+                [38.0, 24.0],
+                {}
+            ).addTo(feature_group_d03792eb3408499c88db2eb3158b665d);
+        
+    
+            var icon_affd0b2ef0414d09b8a6c892971e7f72 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
             );
-            marker_f9e018562f5946d795023cab62af226b.setIcon(icon_ebf902088e9a4f0fb3bdcd5d0cc8e96e);
+            marker_9b46eb6a370940e584b076a85e71c116.setIcon(icon_affd0b2ef0414d09b8a6c892971e7f72);
         
     
-        var popup_1f8e394d1d2142bea9e3126971eae780 = L.popup({"maxWidth": "100%"});
+        var popup_68c2ade311a84a66a567fc03eb2a0c0b = L.popup({"maxWidth": "100%"});
 
         
-            var html_e80c4660210e4c9f99b23ea6358e24af = $(`<div id="html_e80c4660210e4c9f99b23ea6358e24af" style="width: 100.0%; height: 100.0%;">Hello from Greece!</div>`)[0];
-            popup_1f8e394d1d2142bea9e3126971eae780.setContent(html_e80c4660210e4c9f99b23ea6358e24af);
+            var html_bf8ca03ca19247a3bf630c3d774e24bd = $(`<div id="html_bf8ca03ca19247a3bf630c3d774e24bd" style="width: 100.0%; height: 100.0%;">Hello from Greece!</div>`)[0];
+            popup_68c2ade311a84a66a567fc03eb2a0c0b.setContent(html_bf8ca03ca19247a3bf630c3d774e24bd);
         
 
-        marker_f9e018562f5946d795023cab62af226b.bindPopup(popup_1f8e394d1d2142bea9e3126971eae780)
+        marker_9b46eb6a370940e584b076a85e71c116.bindPopup(popup_68c2ade311a84a66a567fc03eb2a0c0b)
         ;
 
         
