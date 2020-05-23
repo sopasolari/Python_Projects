@@ -18,11 +18,12 @@ while True:
         print("Working hours...")
     else :
         with open(hosts_temp , "r+") as file :
-            content = file.read()
-            for website in website_list:
-                if website in content :
-                    file.seek(822)
-                    file.truncate(822)
+            content = file.readlines()
+            file.seek(0)
+            for line in content:
+                if not any(website in line for website in website_list):
+                    file.write(line)
+            file.truncate()
         print("Relaxing Time...")
 
     time.sleep(5)
