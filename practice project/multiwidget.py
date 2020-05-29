@@ -3,8 +3,11 @@ from tkinter import *
 window=Tk()
 
 def convert():
+    t1.delete("1.0",END)
     t1.insert(END,float(e1_value.get())*1000)
+    t2.delete("1.0",END)
     t2.insert(END,float(e1_value.get())*2.2046)
+    t3.delete("1.0",END)
     t3.insert(END,float(e1_value.get())*35.274)
 
 l1=Label(window,text="Kg",height=1,width=20)
