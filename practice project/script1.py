@@ -3,6 +3,7 @@ from tkinter import *
 window=Tk()
 
 def km_to_miles():
+    t1.delete("1.0",END)
     t1.insert(END,float(e1_value.get())*1.6)
 
 b1=Button(window,text="Excute",command=km_to_miles)
