@@ -30,4 +30,13 @@ t2.grid(row=1,column=1)
 t3=Text(window,height=1,width=20)
 t3.grid(row=1,column=2)
 
+l2=Label(window,text="Grams",heigh=1,width=20)
+l2.grid(row=2,column=0)
+
+l3=Label(window,text="Pounds",heigh=1,width=20)
+l3.grid(row=2,column=1)
+
+l4=Label(window,text="Ounces",heigh=1,width=20)
+l4.grid(row=2,column=2)
+
 window.mainloop()
