@@ -4,6 +4,8 @@ window=Tk()
 
 def convert():
     t1.insert(END,float(e1_value.get())*1000)
+    t2.insert(END,float(e1_value.get())*2.2046)
+    t3.insert(END,float(e1_value.get())*35.274)
 
 l1=Label(window,text="Kg",height=1,width=20)
 l1.grid(row=0,column=0)
