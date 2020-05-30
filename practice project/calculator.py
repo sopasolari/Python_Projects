@@ -1,4 +1,5 @@
 from tkinter import *
+from tkinter import messagebox
 
 window=Tk()
 
@@ -12,8 +13,11 @@ def multi():
     t1.delete("1.0",END)
     t1.insert(END,float(e1_value.get())*float(e2_value.get()))
 def division():
-    t1.delete("1.0",END)
-    t1.insert(END,float(e1_value.get())/float(e2_value.get()))
+    if float(e1_value.get()) == 0 and float(e2_value.get()) == 0 :
+        messagebox.showinfo("Devine error","You can't devine 0/0")
+    else:
+        t1.delete("1.0",END)
+        t1.insert(END,float(e1_value.get())/float(e2_value.get()))
 
 l1=Label(window,text="Insert first number")
 l1.grid(row=0,column=0)
