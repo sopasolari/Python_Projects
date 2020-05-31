@@ -14,8 +14,10 @@ def multi():
     t1.insert(END,float(e1_value.get())*float(e2_value.get()))
 def division():
     if not float(e1_value.get()) and not float(e2_value.get()) :
+        t1.delete("1.0",END)
         messagebox.showerror("Devine error","You can't devine 0/0")
     elif not float(e2_value.get()):
+        t1.delete("1.0",END)
         messagebox.showerror("Devine error","You can't devine with 0")
     else:
         t1.delete("1.0",END)
