@@ -4,7 +4,7 @@ from tkinter import messagebox
 window=Tk()
 
 def plus():
-    t1.delete("1.0",END)
+    t1.delete(END)
     t1.insert(END,float(e1_value.get())+float(e2_value.get()))
 def minus():
     t1.delete("1.0",END)
